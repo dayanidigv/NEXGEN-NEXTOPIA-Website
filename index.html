@@ -18,6 +18,17 @@
 
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+		#color-picker{
+			position: fixed;
+			bottom: 10px;
+			right: 10px;
+			background-color: aliceblue;
+			padding: 5px;
+			text-align: center;
+		}
+	</style>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -526,6 +537,11 @@
 		</div>
 	</section>
 
+	<div class="color-picker" id="color-picker">
+		<input type="color" id="primaryColorPicker" name="primaryColorPicker" value="#007bff">
+		<span class="d-block">#007bff</span>
+	  </div>
+
 	<!-- Blog Section -->
 	<section class="ftco-section bg-light" id="blog-section">
 		<div class="container">
@@ -554,7 +570,7 @@
 							<h3 class="heading"><a
 									href="/blog/chart-your-future-with-prelude-pathways-where-experience-meets-innovation/">Chart
 									Your Future with Prelude Pathways: Where Experience Meets Innovation</a></h3>
-							<p >In today's rapidly evolving job market, the path from education to career success is rarely a straight line.</p>
+									<p><a href="/blog/chart-your-future-with-prelude-pathways-where-experience-meets-innovation/" class="btn btn-primary">Learn more</a></p>
 						</div>
 					</div>
 				</div>
@@ -571,7 +587,7 @@
 							</div>
 							<h3 class="heading"><a href="/blog/expand-your-horizons-with-nextgen-learniverse">Expand
 									Your Horizons with NextGen Learniverse</a></h3>
-							<p>In today's fast-paced world, learning never stops.</p>
+									<p><a href="/blog/expand-your-horizons-with-nextgen-learniverse" class="btn btn-primary">Learn more</a></p>
 						</div>
 					</div>
 				</div>
@@ -589,7 +605,7 @@
 							<h3 class="heading"><a
 									href="/blog/bridge-the-gap-to-your-dream-career-with-nextgen-talentstream">Bridge
 									the Gap to Your Dream Career with NextGen TalentStream</a></h3>
-							<p>In today's competitive job market, connecting talented individuals with the right opportunities can be a challenge.</p>
+									<p><a href="/blog/bridge-the-gap-to-your-dream-career-with-nextgen-talentstream" class="btn btn-primary">Learn more</a></p>
 						</div>
 					</div>
 				</div>
@@ -607,7 +623,7 @@
 							<h3 class="heading"><a
 									href="/blog/ignite-your-entrepreneurial-spirit-with-nextgen-ventures">Ignite Your
 									Entrepreneurial Spirit with NextGen Ventures</a></h3>
-							<p>In a world driven by innovation, the next big idea could come from anywhere—especially from the brilliant minds of today's students.</p>
+									<p><a href="/blog/ignite-your-entrepreneurial-spirit-with-nextgen-ventures" class="btn btn-primary">Learn more</a></p>
 						</div>
 					</div>
 				</div>
@@ -624,7 +640,7 @@
 							</div>
 							<h3 class="heading"><a href="/blog/make-a-difference-with-nextgen-philanthropy">Make a
 									Difference with NextGen Philanthropy</a></h3>
-							<p>In today's interconnected world, the power to create positive change lies in our hands.</p>
+									<p><a href="/blog/make-a-difference-with-nextgen-philanthropy" class="btn btn-primary">Learn more</a></p>
 						</div>
 					</div>
 				</div>
@@ -641,7 +657,7 @@
 							</div>
 							<h3 class="heading"><a href="/blog/empower-your-ideas-with-nextgen-intellex/">Empower Your Ideas with NextGen IntelleX</a>
 							</h3>
-							<p>In a world driven by innovation, great ideas have the power to shape the future.</p>
+							<p><a href="/blog/empower-your-ideas-with-nextgen-intellex/" class="btn btn-primary">Learn more</a></p>
 						</div>
 					</div>
 				</div>
@@ -649,8 +665,6 @@
 			</div>
 		</div>
 	</section>
-
-
 
 	<!-- Contact Us -->
 	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
@@ -665,7 +679,7 @@
 			</div>
 
 			<div class="row block-9">
-				<div class="col-md-8 ">
+				<div class="col-md-8 mx-auto ">
 					<form action="#" class="bg-light p-4 p-md-5 contact-form">
 						<div class="row">
 							<div class="col-md-6">
@@ -699,7 +713,7 @@
 
 				</div>
 
-				<div class="col-md-4 d-flex pl-md-5">
+				<div class="col-md-8 col-lg-4 mt-sm-5 mx-auto d-flex pl-md-5">
 					<div class="row">
 						
 						<div class="dbox w-100 d-flex">
@@ -802,6 +816,16 @@
 				stroke="#3E52A1" />
 		</svg></div>
 
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+			  const colorPicker = document.getElementById('primaryColorPicker');
+		
+			  colorPicker.addEventListener('input', function(event) {
+				$(':root').css('--secondary-color', event.target.value);
+			  });
+			});
+		  </script>
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
