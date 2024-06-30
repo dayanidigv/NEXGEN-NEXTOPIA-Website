@@ -80,14 +80,16 @@
 
 	var carousel = function() {
 		$('.home-slider').owlCarousel({
-	    loop:true,
-	    autoplay: true,
-	    margin:0,
-	    animateOut: 'fadeOut',
-	    animateIn: 'fadeIn',
-	    nav:false,
-	    autoplayHoverPause: false,
-	    items: 1,
+			animateOut: 'fadeOut',
+			autoplay: true,
+			autoplayHoverPause: false,
+			smartSpeed: 500,
+			dots: false,
+			lazyLoad: true,
+			loop: true,
+			mouseDrag: false,
+			pullDrag: false,
+	    items: 6,
 	    navText : ["<span class='ion-md-arrow-back'></span>","<span class='ion-chevron-right'></span>"],
 	    responsive:{
 	      0:{
@@ -101,6 +103,8 @@
 	      }
 	    }
 		});
+
+
 		$('.carousel-testimony').owlCarousel({
 			center: true,
 			loop: true,
@@ -193,30 +197,23 @@
 	
 
 	var counter = function() {
-		
-		$('#section-counter, .hero-wrap, .ftco-counter').waypoint( function( direction ) {
-
-			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
-
-				var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
-				$('.number').each(function(){
-					var $this = $(this),
-						num = $this.data('number');
-						console.log(num);
-					$this.animateNumber(
-					  {
-					    number: num,
-					    numberStep: comma_separator_number_step
-					  }, 7000
-					);
-				});
-				
-			}
-
-		} , { offset: '95%' } );
-
-	}
-	counter();
+		$('#section-counter, .hero-wrap, .ftco-counter').waypoint(function(direction) {
+		  if (direction === 'down' && !$(this.element).hasClass('ftco-animated')) {
+			var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',');
+			$('.number').each(function() {
+			  var $this = $(this),
+				num = $this.data('number');
+			  console.log(num);
+			  $this.animateNumber({
+				number: num,
+				numberStep: comma_separator_number_step
+			  }, 2000);
+			});
+			$(this.element).addClass('ftco-animated');
+		  }
+		}, { offset: '95%' });
+	  }
+	  counter();
 
 
 	var contentWayPoint = function() {
