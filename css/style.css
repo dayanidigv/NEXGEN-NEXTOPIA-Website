@@ -8474,7 +8474,7 @@ h1, h2, h3, h4, h5,
           box-shadow: 20px -20px 69px -27px rgba(0, 0, 0, 0.16); }
           .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay, .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay-1 {
             position: absolute;
-            left: -18%;
+            left: -27%;
             background:var(--fifth-color);
             width: 500px;
             height: 50%;
@@ -8539,7 +8539,7 @@ h1, h2, h3, h4, h5,
                 transform: translateY(-50%);
                 right: 0;
                 max-width: 60%;
-                padding-left: 45px;
+                
                 padding-right: 3em; } }
         .owl-carousel.home-slider .slider-item .slider-text .subheading {
           color: #000000;
