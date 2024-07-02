@@ -3401,7 +3401,7 @@ input[type="button"].btn-block {
   .nav-tabs .nav-item.show .nav-link {
     color: #495057;
     background-color:var(--fifth-color);
-    border-color: #dee2e6 #dee2e6var(--fifth-color); }
+    border-color: #dee2e6 #dee2e6 var(--fifth-color); }
   .nav-tabs .dropdown-menu {
     margin-top: -1px;
     border-top-left-radius: 0;
@@ -9221,7 +9221,7 @@ textarea.form-control {
 .ftco-footer {
   font-size: 16px;
   background: #232931;
-  padding: 7em 0;
+  padding: 7em 0 0 0;
   z-index: 0; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
