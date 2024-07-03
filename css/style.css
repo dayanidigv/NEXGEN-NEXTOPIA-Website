@@ -9117,15 +9117,8 @@ h1, h2, h3, h4, h5,
           border: 1px solid rgba(0, 0, 0, 0.02);
           box-shadow: 0px 5px 21px -14px rgba(0, 0, 0, 0.14);
           border-radius: 5px;
-          height: 300px;
         }
 
-        
-  @media (max-width: 767.98px) {
-    .testimony-wrap {
-      min-height: 200px; 
-    }
-  }
         
         .testimony-wrap .user-img {
           width: 80px;
