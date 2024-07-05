@@ -18,10 +18,91 @@
 
     <link rel="stylesheet" href="../css/flaticon.css">
     <link rel="stylesheet" href="../css/style.css">
-	<link rel="shortcut icon" href="../images/logo/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/logo/logo.png" type="image/x-icon">
 
 
 
+    <style>
+        .card-container {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-warp: warp;
+            padding: 30px;
+        }
+
+
+        .card-container .card {
+            position: relative;
+            min-width: 300px;
+            height: 300px;
+            margin: 30px 10px;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.095);
+            transition: 0.3s ease-in-out;
+            border-radius: 15px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: .25rem;
+            box-shadow: 0 .5em 1em -.125em rgba(10, 10, 10, .1), 0 0 0 1px rgba(10, 10, 10, .02);
+            color: #4a4a4a;
+            min-width: 100%;
+            position: relative;
+        }
+
+
+
+        .card-container .card .image {
+            position: relative;
+            width: 260px;
+            height: 260px;
+            top: -40%;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 50%;
+
+        }
+
+        .card-container .card .image img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+
+        .image img {
+            display: block;
+            height: auto;
+            width: 100%;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+
+        .card-container .card .content {
+            position: relative;
+            top: -140px;
+            padding: 10px 15px;
+            color: #111;
+            text-align: center;
+            visibility: visible;
+            opacity: 1;
+            transition: 0.3s ease-in-out;
+            margin-top: 50px;
+        }
+
+        .card-container .card .content h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+
+        }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -30,7 +111,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
         id="ftco-navbar">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/"><img src="/images/logo/logo.png" style="width: 50px;">NEXGEN NEXTOPIA<span></span></a>
+            <a class="navbar-brand" href="/"><img src="/images/logo/logo.png" style="width: 50px;">NEXGEN
+                NEXTOPIA<span></span></a>
             <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
                 data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
@@ -41,8 +123,10 @@
                     <li class="nav-item"><a href="/#home-section" class="nav-link"><span>Home</span></a></li>
                     <li class="nav-item"><a href="/#about-section" class="nav-link"><span>About</span></a></li>
                     <li class="nav-item"><a href="/#services-section" class="nav-link"><span>Services</span></a></li>
-                    <li class="nav-item"><a href="/our-community" class="nav-link active"><span>Our Community</span></a></li>
-                    <li class="nav-item"><a href="/nextgen-mentor-network" class="nav-link"><span>NextGen Mentor Network</span></a></li>
+                    <li class="nav-item"><a href="/our-community" class="nav-link active"><span>Our Community</span></a>
+                    </li>
+                    <li class="nav-item"><a href="/nextgen-mentor-network" class="nav-link"><span>NextGen Mentor
+                                Network</span></a></li>
                     <li class="nav-item"><a href="/#projects-section" class="nav-link"><span>Projects</span></a></li>
                     <li class="nav-item"><a href="/#blog-section" class="nav-link"><span>Blog</span></a></li>
                     <li class="nav-item"><a href="/#contact-section" class="nav-link"><span>Contact</span></a></li>
@@ -55,82 +139,85 @@
     <section class="py-3 py-md-5 py-xl-8 mt-5">
         <div class="container">
             <div class="row justify-content-center">
-				<div class="col-md-12 heading-section text-center ftco-animate mb-5">
-					<!-- <span class="subheading">I am grat at</span> -->
-					<h2 class="mb-4">Our Community</h2>
-				</div>
-			</div>
+                <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+                    <!-- <span class="subheading">I am grat at</span> -->
+                    <h2 class="mb-4">Our Community</h2>
+                </div>
+            </div>
         </div>
 
         <div class="container overflow-hidden">
-            <div class="row gy-4 gy-lg-0 d-flex justify-content-center">
-                <div class="col-12 col-lg-4 col-md-6 mb-5">
-                    <div class="card border-0 shadow">
-                        <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
-                            <a href="#!">
-                                <img class="img-fluid bsb-scale rounded-lg bsb-hover-scale-up" loading="lazy"
-                                    src="../images/our-community/founder-and-ceo/MONISH-C.jpeg" alt="Flora Nyra">
-                            </a>
-                        </figure>
-                        <div class="card-body border bg-light p-4">
-                            <h2 class="card-title h4 fw-bold mb-1">Monish C</h2>
-                            <p class="card-text text-secondary">Founder & CEO</p>
+            <div class="row gy-4 gy-lg-0 d-flex justify-content-center mt-5">
+                
+
+                <div class="col-12 col-lg-4  col-md-6 mb-5">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="image">
+                                <img src="../images/our-community/founder-and-ceo/MONISH-C.jpeg">
+                            </div>
+                            <div class="content">
+                                <h4>Monish C</h4>
+                                <p>Founder & CEO</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 col-md-6   mb-5">
-                    <div class="card border-0 shadow">
-                        <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
-                            <a href="#!">
-                                <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy"
-                                    src="../images/our-community/co-founder/SANTHOSH-KUMAR-S.jpeg" alt="Flora Nyra">
-                            </a>
-                        </figure>
-                        <div class="card-body border bg-light p-4">
-                            <h2 class="card-title h4 fw-bold mb-1">Santhosh Kumar S </h2>
-                            <p class="card-text text-secondary">Co-Founder</p>
+
+
+                <div class="col-12 col-lg-4  col-md-6 mb-5">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="image">
+                                <img src="../images/our-community/co-founder/SANTHOSH-KUMAR-S.jpeg">
+                            </div>
+                            <div class="content">
+                                <h4>Santhosh Kumar S </h4>
+                                <p>Co-Founder</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row gy-4 gy-lg-0 d-flex justify-content-center">
                 <div class="col-12 text-center mt-5">
-                    <h2 class="mb-4" style="font-size: 34px; text-transform: capitalize;">Our Head chiefs</h2>
+                    <h2 class="mb-5" style="font-size: 34px; text-transform: capitalize;">Our Head chiefs</h2>
                 </div>
-                <div class="col-12 col-lg-4 col-md-6 mb-5">
-                    <div class="card border-0 shadow">
-                        <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
-                            <a href="#!">
-                                <img class="img-fluid bsb-scale rounded-lg bsb-hover-scale-up" loading="lazy"
-                                    src="../images/our-community/head-chief/GOPINATH-P .jpeg" alt="Flora Nyra">
-                            </a>
-                        </figure>
-                        <div class="card-body border bg-light p-4">
-                            <h2 class="card-title h4 fw-bold mb-1">Gobinath P</h2>
-                            <p class="card-text text-secondary">MBA</p>
+
+                <div class="col-12 col-lg-4  col-md-6 mb-5">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="image">
+                                <img src="../images/our-community/head-chief/GOPINATH-P .jpeg">
+                            </div>
+                            <div class="content">
+                                <h4>Gobinath P</h4>
+                                <p>MBA</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 col-md-6 mb-5">
-                    <div class="card border-0 shadow">
-                        <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
-                            <a href="#!">
-                                <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy"
-                                    src="../images/our-community/head-chief/MEIAZHAGAN-M.jpg" alt="Flora Nyra">
-                            </a>
-                        </figure>
-                        <div class="card-body border bg-light p-4">
-                            <h2 class="card-title h4 fw-bold mb-1">Meiazhagan M</h2>
-                            <p class=" card-text text-secondary">Embedded Software Developer</p>
+
+
+                <div class="col-12 col-lg-4  col-md-6 mb-5">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="image">
+                                <img src="../images/our-community/head-chief/MEIAZHAGAN-M.jpg">
+                            </div>
+                            <div class="content">
+                                <h4>Meiazhagan M</h4>
+                                <p>Embedded Software Developer</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
             <div class="row gy-4 gy-lg-0 d-flex justify-content-center " id="chiefs">
                 <div class="col-12 text-center mt-5">
-                    <h2 class="mb-4" style="font-size: 34px; text-transform: capitalize;">Our Chiefs</h2>
+                    <h2 class="mb-5" style="font-size: 34px; text-transform: capitalize;">Our Chiefs</h2>
                 </div>
-
             </div>
             <div class="row gy-4 gy-lg-0 d-flex justify-content-center " id="chief-assistances">
                 <div class="col-12 text-center mt-5">
@@ -144,10 +231,10 @@
 
 
 
-	<footer class="ftco-footer ftco-section mt-5">
-		<div class="container">
-			<div class="row ">
-				<!-- <div class="col-md-6 col-lg-3">
+    <footer class="ftco-footer ftco-section mt-5">
+        <div class="container">
+            <div class="row ">
+                <!-- <div class="col-md-6 col-lg-3">
 					<div class="ftco-footer-widget mb-4">
 						<h2 class="ftco-heading-2">About</h2>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
@@ -155,56 +242,72 @@
 						<p><a href="#" class="btn btn-primary">Learn more</a></p>
 					</div>
 				</div> -->
-				<div class="col-md-6 col-lg-4">
-					<div class="ftco-footer-widget mb-4 ml-md-4">
-						<h2 class="ftco-heading-2">Links</h2>
-						<ul class="list-unstyled">
-							<li><a href="#home-section"><span class="fa fa-chevron-right mr-2"></span>Home</a></li>
-							<li><a href="#about-section"><span class="fa fa-chevron-right mr-2"></span>About</a></li>
-							<li><a href="#services-section"><span class="fa fa-chevron-right mr-2"></span>Services</a></li>
-                            <li><a href="/our-community"><span class="fa fa-chevron-right mr-2"></span>Our Community</a></li>
-                            <li><a href="/nextgen-mentor-network"><span class="fa fa-chevron-right mr-2"></span>NextGen Mentor Network</a></li>
-							<li><a href="#projects-section"><span class="fa fa-chevron-right mr-2"></span>Projects</a></li>
-							<li><a href="#blog-section"><span class="fa fa-chevron-right mr-2"></span>Blogs</a></li>
-							<li><a href="#contact-section"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
-						</ul>
-					</div>
-				</div> 
-				<div class="col-md-6 col-lg-4">
-					<div class="ftco-footer-widget mb-sm-4">
-						<h2 class="ftco-heading-2">Services</h2>
-						<ul class="list-unstyled">
-							<li><a href="#services-section"><span class="fa fa-chevron-right mr-2"></span>NexGen Prelude Pathways</a></li>
-							<li><a href="#services-section"><span class="fa fa-chevron-right mr-2"></span>NexGen Learniverse</a></li>
-							<li><a href="#services-section"><span class="fa fa-chevron-right mr-2"></span>NexGen TalentStream</a></li>
-							<li><a href="#services-section"><span class="fa fa-chevron-right mr-2"></span>NexGen Ventures</a></li>
-							<li><a href="#services-section"><span class="fa fa-chevron-right mr-2"></span>NexGen IntelleX</a></li>
-							<li><a href="#services-section"><span class="fa fa-chevron-right mr-2"></span>NexGen Philanthropy</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<div class="ftco-footer-widget mb-sm--4">
-						<h2 class="ftco-heading-2">Have a Questions?</h2>
-						<div class="block-23 mb-3">
-							<ul>
-								<li><a href="tel://8838758506"><span class="icon fa fa-phone"></span><span class="text">+91 8838758506</span></a></li>
-								<li><a href="mailto:nexgennextopia@gamil.com"><span class="icon fa fa-paper-plane pr-4"></span><span
-											class="text">nexgennextopia@gamil.com</span></a></li>
-							</ul>
-						</div>
-						<ul class="ftco-footer-social list-unstyled mt-2">
-							<li class="ftco-animate"><a href="https://www.linkedin.com/in/nex-gen-352171317/"><span class="fa fa-linkedin"></span></a></li>
-							<li class="ftco-animate"><a href="https://www.instagram.com/nexgen_nextopia?igsh=cndhb2c4dXZ3ZHE4"><span class="fa fa-instagram"></span></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-12 text-center mb-2">
-					<img src="/images/logo/logo.png" style="width: 100px;">
-				</div>
-			</div>
-		</div>
-	</footer>
+                <div class="col-md-6 col-lg-4">
+                    <div class="ftco-footer-widget mb-4 ml-md-4">
+                        <h2 class="ftco-heading-2">Links</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#home-section"><span class="fa fa-chevron-right mr-2"></span>Home</a></li>
+                            <li><a href="#about-section"><span class="fa fa-chevron-right mr-2"></span>About</a></li>
+                            <li><a href="#services-section"><span class="fa fa-chevron-right mr-2"></span>Services</a>
+                            </li>
+                            <li><a href="/our-community"><span class="fa fa-chevron-right mr-2"></span>Our Community</a>
+                            </li>
+                            <li><a href="/nextgen-mentor-network"><span class="fa fa-chevron-right mr-2"></span>NextGen
+                                    Mentor Network</a></li>
+                            <li><a href="#projects-section"><span class="fa fa-chevron-right mr-2"></span>Projects</a>
+                            </li>
+                            <li><a href="#blog-section"><span class="fa fa-chevron-right mr-2"></span>Blogs</a></li>
+                            <li><a href="#contact-section"><span class="fa fa-chevron-right mr-2"></span>Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="ftco-footer-widget mb-sm-4">
+                        <h2 class="ftco-heading-2">Services</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#services-section"><span class="fa fa-chevron-right mr-2"></span>NexGen Prelude
+                                    Pathways</a></li>
+                            <li><a href="#services-section"><span class="fa fa-chevron-right mr-2"></span>NexGen
+                                    Learniverse</a></li>
+                            <li><a href="#services-section"><span class="fa fa-chevron-right mr-2"></span>NexGen
+                                    TalentStream</a></li>
+                            <li><a href="#services-section"><span class="fa fa-chevron-right mr-2"></span>NexGen
+                                    Ventures</a></li>
+                            <li><a href="#services-section"><span class="fa fa-chevron-right mr-2"></span>NexGen
+                                    IntelleX</a></li>
+                            <li><a href="#services-section"><span class="fa fa-chevron-right mr-2"></span>NexGen
+                                    Philanthropy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="ftco-footer-widget mb-sm--4">
+                        <h2 class="ftco-heading-2">Have a Questions?</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><a href="tel://8838758506"><span class="icon fa fa-phone"></span><span
+                                            class="text">+91 8838758506</span></a></li>
+                                <li><a href="mailto:nexgennextopia@gamil.com"><span
+                                            class="icon fa fa-paper-plane pr-4"></span><span
+                                            class="text">nexgennextopia@gamil.com</span></a></li>
+                            </ul>
+                        </div>
+                        <ul class="ftco-footer-social list-unstyled mt-2">
+                            <li class="ftco-animate"><a href="https://www.linkedin.com/in/nex-gen-352171317/"><span
+                                        class="fa fa-linkedin"></span></a></li>
+                            <li class="ftco-animate"><a
+                                    href="https://www.instagram.com/nexgen_nextopia?igsh=cndhb2c4dXZ3ZHE4"><span
+                                        class="fa fa-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 text-center mb-2">
+                    <img src="/images/logo/logo.png" style="width: 100px;">
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
@@ -242,103 +345,103 @@
             var chiefs = [
                 {
                     "name": "Gokulnath M",
-                    "image": "../images/our-community/chief/GOKULNATH M.jpg",
+                    "image": "../images/our-community/chief/GOKULNATH M-1.jpg",
                     "designation": "MEP Drafting and Designer",
                     "link": "#",
                 },
                 {
                     "name": "Prakash M",
-                    "image": "../images/our-community/chief/PRAKASH M.jpg",
+                    "image": "../images/our-community/chief/PRAKASH M-1.jpg",
                     "designation": "IoT Developer",
                     "link": "#",
                 },
                 {
                     "name": "Yamini H.J",
-                    "image": "../images/our-community/chief/YAMINI H J.jpg",
+                    "image": "../images/our-community/chief/YAMINI H J-1.jpg",
                     "designation": "Software Developer",
                     "link": "#",
                 },
                 {
                     "name": "Prem E",
-                    "image": "../images/our-community/chief/PREM E.jpg",
+                    "image": "../images/our-community/chief/PREM E-1.jpg",
                     "designation": "App Developer",
                     "link": "#",
                 },
                 {
                     "name": "Santhosh Kumar S",
-                    "image": "../images/our-community/chief/SANTHOSH KUMAR S.jpg",
+                    "image": "../images/our-community/chief/SANTHOSH KUMAR S-1.jpg",
                     "designation": "Chemical Engineer",
                     "link": "#",
                 },
                 {
                     "name": "Bharath Kumar R",
-                    "image": "../images/our-community/chief/BHARATH KUMAR R.jpg",
+                    "image": "../images/our-community/chief/BHARATH KUMAR R-1.jpg",
                     "designation": "Biomedical Engineer",
                     "link": "#",
                 },
                 {
                     "name": "Kohlia P",
-                    "image": "../images/our-community/chief/KOHLIA p.jpg",
+                    "image": "../images/our-community/chief/KOHLIA p-1.jpg",
                     "designation": "Biomedical Engineer",
                     "link": "#",
                 },
                 {
                     "name": "Maadesh Kannan G",
-                    "image": "../images/our-community/chief/MAADESH KANNAN G.jpg",
+                    "image": "../images/our-community/chief/MAADESH KANNAN G-1.jpg",
                     "designation": "ECE",
                     "link": "#",
                 },
                 {
                     "name": "Maheswari S",
-                    "image": "../images/our-community/chief/MAHESWARI S.jpg",
+                    "image": "../images/our-community/chief/MAHESWARI S-1.jpg",
                     "designation": "QARA Engineer",
                     "link": "#",
                 },
                 {
                     "name": "Pavithran G",
-                    "image": "../images/our-community/chief/PAVITHRAN G.jpg",
+                    "image": "../images/our-community/chief/PAVITHRAN G-1.jpg",
                     "designation": "Biomedical Engineer",
                     "link": "#",
                 },
                 {
                     "name": "Rajesh Kumar K",
-                    "image": "../images/our-community/chief/RAJESH KUMAR K.jpg",
+                    "image": "../images/our-community/chief/RAJESH KUMAR K-1.jpg",
                     "designation": "Biomedical Engineer",
                     "link": "#",
                 },
                 {
                     "name": "Ranjath M",
-                    "image": "../images/our-community/chief/RANJITH M.jpg",
+                    "image": "../images/our-community/chief/RANJITH M-1.jpg",
                     "designation": "Design Engineer",
                     "link": "#",
                 },
                 {
                     "name": "Soumya S",
-                    "image": "../images/our-community/chief/SOUMYA S.jpg",
+                    "image": "../images/our-community/chief/SOUMYA S-1.jpg",
                     "designation": "Biomedical Engineer",
                     "link": "#",
                 },
                 {
                     "name": "Venugopal S",
-                    "image": "../images/our-community/chief/VENUGOPAL S.jpg",
+                    "image": "../images/our-community/chief/VENUGOPAL S-1.jpg",
                     "designation": "Biomedical Engineer",
                     "link": "#",
                 },
                 {
                     "name": "Yasmin S",
-                    "image": "../images/our-community/chief/YASMIN S.jpg",
+                    "image": "../images/our-community/chief/YASMIN S-1.jpg",
                     "designation": "Biomedical Engineer",
                     "link": "#",
                 },
                 {
                     "name": "Sanjay T",
-                    "image": "../images/our-community/chief/SANJAY T.jpg",
+                    "image": "../images/our-community/chief/SANJAY T-1.jpg",
                     "designation": "Biomedical Engineer",
                     "link": "#",
                 },
                 {
                     "name": "Anand S",
-                    "image": "../images/our-community/chief/ANANTH S.jpg",
+                    "image": "../images/our-community/chief/ANANTH S-1.jpg",
                     "designation": "ECE",
                     "link": "#",
                 },
@@ -348,132 +451,158 @@
             var chiefAssistance = [
                 {
                     "name": "Dinesh S",
-                    "image": "../images/our-community/chief-associate/DINESH S.jpg",
+                    "image": "../images/our-community/chief-associate/DINESH S-1.jpg",
                     "designation": "Design Engineer - IoT",
                     "link": "#",
                 },
                 {
                     "name": "Divya R.P",
-                    "image": "../images/our-community/chief-associate/DIVYA R P.jpg",
+                    "image": "../images/our-community/chief-associate/DIVYA R P-1.jpg",
                     "designation": "Robotics Trainer",
                     "link": "#",
                 },
                 {
                     "name": "Jeeva G",
-                    "image": "../images/our-community/chief-associate/JEEVA G.jpg",
+                    "image": "../images/our-community/chief-associate/JEEVA G-1.jpg",
                     "designation": "Sales & Service Engineer",
                     "link": "#",
                 },
                 {
                     "name": "Kavin Kumar M",
-                    "image": "../images/our-community/chief-associate/KAVIN KUMAR M.jpeg",
+                    "image": "../images/our-community/chief-associate/KAVIN KUMAR M-1.jpeg",
                     "designation": "Production and Installation, R&D",
                     "link": "#",
                 },
                 {
+                    "name": "Abhirami K.P",
+                    "image": "../images/our-community/chief-associate/Abhirami K.P-1.jpg",
+                    "designation": "HR and finance",
+                    "link": "#",
+                },
+                {
                     "name": "Princy Lediya G",
-                    "image": "../images/our-community/chief-associate/PRINCY LEDIYA G.jpg",
+                    "image": "../images/our-community/chief-associate/PRINCY LEDIYA G-1.jpg",
                     "designation": "Private Finance Officer",
                     "link": "#",
                 },
                 {
                     "name": "Suresh Rajan",
-                    "image": "../images/our-community/chief-associate/SURESHRAJAN.jpg",
+                    "image": "../images/our-community/chief-associate/SURESHRAJAN-1.jpg",
                     "designation": "Sales and Service Engineer",
                     "link": "#",
                 },
                 {
                     "name": "Kannan M",
-                    "image": "../images/our-community/chief-associate/KANNAN M.jpg",
+                    "image": "../images/our-community/chief-associate/KANNAN M-1.jpg",
                     "designation": "Service & Technician (BME)",
                     "link": "#",
                 },
                 {
                     "name": "Manoj J",
-                    "image": "../images/our-community/chief-associate/MANOJ J.jpg",
+                    "image": "../images/our-community/chief-associate/MANOJ J-1.jpg",
                     "designation": "Civil Engineer",
                     "link": "#",
                 },
                 {
                     "name": "Prem Kumar K",
-                    "image": "../images/our-community/chief-associate/PREM KUMAR K.jpg",
+                    "image": "../images/our-community/chief-associate/PREM KUMAR K-1.jpg",
                     "designation": "Biomedical Engineer",
                     "link": "#",
                 },
                 {
                     "name": "Sarvesh R",
-                    "image": "../images/our-community/chief-associate/SARVESH R.jpg",
+                    "image": "../images/our-community/chief-associate/SARVESH R-1.jpg",
                     "designation": "Biomedical Engineer",
                     "link": "#",
                 },
                 {
                     "name": "Vishnu Dhasan",
-                    "image": "../images/our-community/chief-associate/VISHNUDHASAN G .jpg",
+                    "image": "../images/our-community/chief-associate/VISHNUDHASAN G-1.jpg",
                     "designation": "Web Developer",
                     "link": "#",
                 },
                 {
                     "name": "Sanjithraj K M",
-                    "image": "../images/our-community/chief-associate/SANJITHRAJ K M.jpg",
+                    "image": "../images/our-community/chief-associate/SANJITHRAJ K M-1.jpg",
                     "designation": "Civil Engineer",
                     "link": "#",
                 },
                 {
-                    "name": "Abhirami",
-                    "image": "../images/our-community/chief-associate/ABHIRAMI.jpg",
-                    "designation": "MBA",
+                    "name": "Ramya M",
+                    "image": "../images/our-community/chief-associate/Ramya M-1.jpg",
+                    "designation": "",
+                    "link": "#",
+                },
+                {
+                    "name": "Vaishnavi T K",
+                    "image": "../images/our-community/chief-associate/Vaishnavi T K-1.jpg",
+                    "designation": "",
                     "link": "#",
                 },
                 {
                     "name": "Raghu Raman M",
-                    "image": "../images/our-community/chief-associate/RAGHURAMAN M.jpg",
+                    "image": "../images/our-community/chief-associate/RAGHURAMAN M-1.jpg",
                     "designation": "",
                     "link": "#",
                 },
                 {
                     "name": "Vishnu Ram S.R",
-                    "image": "../images/our-community/chief-associate/VISHNURAM S R.jpg",
+                    "image": "../images/our-community/chief-associate/VISHNURAM S R-1.jpg",
                     "designation": "",
                     "link": "#",
                 },
             ];
 
 
+
             chiefs.forEach(e => {
                 $('#chiefs').append(`
-                    <div class="col-12 col-lg-4 col-xl-3 col-md-6 mb-5">
-                        <div class="card border-0 h-100 shadow">
-                            <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
-                                <a href="${e.link}">
-                                    <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy"
-                                        src="${e.image}" alt="${e.name}">
-                                </a>
-                            </figure>
-                            <div class="card-body border bg-light px-4 ">
-                                <h2 class="chiefs-card-title h4 fw-bold mb-0">${e.name}</h2>
-                                <span class="chiefs-card-text  text-secondary">${e.designation}</span>
+                <div class="col-12 col-lg-4  col-md-6 mb-5">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="image">
+                                <img src="${e.image}">
+                            </div>
+                            <div class="content">
+                                <h4>${e.name}</h4>
+                                <p>${e.designation}</p>
                             </div>
                         </div>
                     </div>
+                </div>
                 `);
             });
 
+            // <div class="col-12 col-lg-4 col-xl-3 col-md-6 mb-5">
+            //             <div class="card border-0 h-100 shadow">
+            //                 <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
+            //                     <a href="${e.link}">
+            //                         <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy"
+            //                             src="${e.image}" alt="${e.name}">
+            //                     </a>
+            //                 </figure>
+            //                 <div class="card-body border bg-light px-4 ">
+            //                     <h2 class="chiefs-card-title h4 fw-bold mb-0">${e.name}</h2>
+            //                     <span class="chiefs-card-text  text-secondary">${e.designation}</span>
+            //                 </div>
+            //             </div>
+            //         </div>
+
             chiefAssistance.forEach(e => {
                 $('#chief-assistances').append(`
-                    <div class="col-12 col-lg-4 col-xl-3 col-md-6 mb-5">
-                        <div class="card border-0 h-100 shadow">
-                            <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
-                                <a href="${e.link}">
-                                    <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy"
-                                        src="${e.image}" alt="${e.name}">
-                                </a>
-                            </figure>
-                            <div class="card-body border bg-light px-4 ">
-                                <h2 class="chiefs-card-title h4 fw-bold mb-0">${e.name}</h2>
-                                <span class="chiefs-card-text  text-secondary">${e.designation}</span>
+                <div class="col-12 col-lg-4  col-md-6 mb-5">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="image">
+                                <img src="${e.image}">
+                            </div>
+                            <div class="content">
+                                <h4>${e.name}</h4>
+                                <p>${e.designation}</p>
                             </div>
                         </div>
                     </div>
+                </div>
                 `);
             });
         });
