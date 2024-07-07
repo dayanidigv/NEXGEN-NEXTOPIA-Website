@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="author" content="Graham Hannington" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Innak readme</title>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6f8fa;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .innak-font {
+            font-family: "Audiowide", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .masthead {
+            background-color: #24292e;
+            padding: 10px;
+            color: #fff;
+        }
+
+        .masthead-logo {
+            font-size: 20px;
+        }
+
+        .markdown-body {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #586069;
+        }
+    </style>
+    <script type="text/javascript">
+        var HTTP_STATUS_OK = 200;
+        var URL_API_GITHUB_RENDER_MARKDOWN = "https://api.github.com/markdown/raw";
+        var README_FILE_NAME = "README.md";
+
+        var readmeURL = '/README.md';
+
+
+        // Get Markdown, then render it as HTML
+        function getThenRenderMarkdown(markdownURL) {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", markdownURL, true);
+            xhr.responseType = "text";
+            xhr.onload = function (e) {
+                if (this.status == HTTP_STATUS_OK) {
+                    // Response text contains Markdown
+                    renderMarkdown(this.responseText);
+                }
+            }
+            xhr.send();
+        }
+
+        // Use the GitHub API to render Markdown as HTML
+        function renderMarkdown(markdown) {
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", URL_API_GITHUB_RENDER_MARKDOWN, true);
+            xhr.responseType = "html";
+            xhr.onload = function (e) {
+                if (this.status == HTTP_STATUS_OK) {
+                    document.getElementById("readme").innerHTML = this.response;
+                }
+            }
+            xhr.send(markdown);
+        }
+
+        window.onload = function () {
+            getThenRenderMarkdown(readmeURL);
+        }
+    </script>
+</head>
+
+<body>
+    <header class="masthead">
+        <div class="container text-center">
+            <h1><span class="innak-font">INNAK</span></h1>
+        </div>
+    </header>
+    <div class="container">
+        <div id="readme" class="markdown-body">
+            <p>Rendering markdown, please wait...</p>
+        </div>
+        <footer class="footer">Rendering by
+            <a href="https://developer.github.com/v3/markdown/">GitHub</a>,
+        </footer>
+    </div>
+</body>
+
+</html>
