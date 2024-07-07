@@ -2,6 +2,10 @@
 <br>
 
 ## Project Overview
+
+<img src="/innak/screenshot.png" alt="innak logo" width="100%" height="">
+
+
 This project involved remodeling an existing template provided by Nexgen Nextopia. The updates include:
 
 - Adding new content to existing pages.
