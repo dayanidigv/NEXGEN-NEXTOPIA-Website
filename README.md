@@ -1,45 +1,44 @@
-# Nexgen Nextopia
+# **Nexgen Nextopia**
 <br>
 
 ## Project Overview
-
+<br>
 <img src="/innak/screenshot.png" alt="innak logo" width="100%" height="">
-
 
 This project involved remodeling an existing template provided by Nexgen Nextopia. The updates include:
 
 - Adding new content to existing pages.
-- Creating new "Our Team" and "Mentors" pages.
+- Duplicating 6 pages to create a blog section.
+- Creating new **Our Community** and **NexGen Mentor Network** pages.
 - Integrating a mail send function in the "Contact Us" section using Apps Script to enable enquiry emails.
 
 <br>
 
 ## Features
 - **Remodeled Template**: Updated with new content and design elements.
-- **Our Team Page**: Showcases the team members.
-- **Mentors Page**: Features the mentors.
+- **Blog**: New blog section with 6 duplicated pages.
+- **Our Community Page**: Showcases the team members (Founders, Head Chiefs, Chiefs, Chief Assistants).
+- **NexGen Mentor Network Page**: Showcases the mentors.
 - **Contact Us Mail Function**: Uses Apps Script to send enquiry emails directly from the website.
 
 <br>
 
-## Maintenance
+## Maintenance and Support
+**Agreement**: Thank you for choosing our services for your website modifications and updates. Below are the terms and conditions for ongoing maintenance and support.
 
-<br>
+**Maintenance Period**: We offer complimentary maintenance support for 6 months, ending on January 7, 2025. During this period, we will assist with minor corrections and adjustments at no additional charge.
 
-### Regular Updates
-- **Content Updates**: Regularly update the website content to ensure it reflects the latest information and offerings.
-- **Feature Enhancements**: Implement new features and improvements as needed to enhance user experience.
+**Scope of Complimentary Maintenance**: The complimentary maintenance period covers:
+- Minor text edits
+- Small design adjustments
+- Bug fixes related to the implemented changes
 
-<br>
+**Additional Work and Charges**: If additional work is required beyond minor corrections, such as:
+- Adding new pages
+- Significant redesigns or feature additions
+- Other extensive modifications
 
-### Backups
-- **Regular Backups**: Ensure regular backups of the website files and any configurations to prevent data loss.
-
-<br>
-
-### Monitoring
-- **Contact Form**: Monitor the contact form to ensure that enquiries are being sent and received correctly.
-- **Performance**: Regularly check the performance of the website to ensure it runs smoothly and efficiently.
+These will be subject to additional charges. A detailed quote will be provided, and work will commence upon agreement.
 
 <br>
 
@@ -61,7 +60,7 @@ This project was made by Innak, where we create innovative technological solutio
 
 <br>
 
-**Innak Contact Information:**
+## **Innak Contact Information:**
 
 - **Website**: [INNAK](https://innak.in)
 - **Email**: info@innak.com
@@ -72,6 +71,6 @@ This project was made by Innak, where we create innovative technological solutio
 
 <img src="https://raw.githubusercontent.com/Innak-crew/innak-logo/main/rec/Innak-Transprent.png" alt="innak logo" width="150" height="">
 
-*For your brand. Made by INNAK*
+***For your brand. Made by INNAK***
 
 Thank you for choosing Innak for your project. We look forward to your feedback and future collaborations!
