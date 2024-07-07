@@ -66,6 +66,8 @@ This project was made by Innak, where we create innovative technological solutio
 
 <br>
 
-For your brand. Made by Innak.
+<img src="https://raw.githubusercontent.com/Innak-crew/innak-logo/main/rec/Innak-Transprent.png" alt="innak logo" width="150" height="">
+
+*For your brand. Made by INNAK*
 
 Thank you for choosing Innak for your project. We look forward to your feedback and future collaborations!
